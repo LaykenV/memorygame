@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-const cards = [1,2,3];
-
-function Card() {
+function Card({ pokemons, handleCardClick }) {
 
     return (
-        <div className='cardsContainer'>
-            {cards.map((eachCard) => {
+        <div className='cardsContainer' onClick={handleCardClick}>
+            {pokemons.map((pokemon) => {
                 return (
-                    <div className='cardContainer'></div>
+                    <div className='cardContainer' key={pokemon.id}>
+                        <img src={pokemon.image} alt={pokemon.name}></img>
+                        <div className='pokemonName'>{pokemon.name}</div>
+                    </div>
                 )
             })}
         </div>

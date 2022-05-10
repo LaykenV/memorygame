@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/header';
 import Body from './components/body';
+import Footer from './components/footer';
 
 
 function App() {
@@ -20,11 +21,10 @@ function App() {
   const fetchPokemons = async () => {
     const pokemons = []
     const num = Math.round(Math.random() * 100);
-    for (let i = num; i <= num+7; i++) {
+    for (let i = num; i <= num+15; i++) {
       const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${i}`
       const response = await fetch(pokemonUrl)
       const pokemon = await response.json()
-      console.log(pokemon);
       const id = pokemon.id
       const name = capitalizeFirstLetter(pokemon.name)
       const image = pokemon.sprites.front_default
@@ -68,8 +68,9 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
-      <Body />
+      <Header currentScore={currentScore} bestScore={bestScore}/>
+      <Body pokemons={pokemons} handleCardClick={handleCardClick}/>
+      <Footer />
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Card from './card';
 
-function Body() {
+function Body({ pokemons, handleCardClick }) {
 
     return (
         <div className='bodyDiv'>
-            <Card />
+            <Card pokemons={pokemons} handleCardClick={handleCardClick}/>
         </div>
     )
 }
