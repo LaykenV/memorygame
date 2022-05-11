@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding:0 ;
+    padding:0;
 }
 
 .App {
@@ -25,7 +25,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-right: 1rem;
 }
 
 .logo {
