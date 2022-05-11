@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/memorygame/static/css/main.f4e4fe2a.css",
+    "main.js": "/memorygame/static/js/main.eb9af851.js",
+    "static/media/pokemon.png": "/memorygame/static/media/pokemon.70706317976000c09e6c.png",
+    "index.html": "/memorygame/index.html",
+    "main.f4e4fe2a.css.map": "/memorygame/static/css/main.f4e4fe2a.css.map",
+    "main.eb9af851.js.map": "/memorygame/static/js/main.eb9af851.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4e4fe2a.css",
+    "static/js/main.eb9af851.js"
+  ]
+}
