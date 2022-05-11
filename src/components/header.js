@@ -6,9 +6,16 @@ function Header({ currentScore, bestScore }) {
     
     return (
         <div className='headerDiv'>
-            <h1>Memory Game</h1>
-            <img src={logo} alt='pokemon logo'></img>
+            <div className='logoContainer'>
+            <img src={logo} alt='pokemon logo' className='logo'></img>
+
+            </div>
             <Scoreboard currentScore={currentScore} bestScore={bestScore}/>
+            <div className='blackBar'>
+                <div className='bigCircle'>
+                    <div className='lilCircle'></div>
+                </div>
+            </div>
         </div>
     )
 }

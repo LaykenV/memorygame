@@ -7,8 +7,10 @@ function Card({ pokemons, handleCardClick }) {
             {pokemons.map((pokemon) => {
                 return (
                     <div className='cardContainer' key={pokemon.id}>
-                        <img src={pokemon.image} alt={pokemon.name}></img>
-                        <div className='pokemonName'>{pokemon.name}</div>
+                        <div className='card'>
+                            <img src={pokemon.image} alt={pokemon.name}></img>
+                            <div className='pokemonName'>{pokemon.name}</div>
+                        </div>
                     </div>
                 )
             })}

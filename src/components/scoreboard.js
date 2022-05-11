@@ -4,8 +4,12 @@ function Scoreboard({ currentScore, bestScore }) {
 
     return (
         <div className='scoreboardDiv'>
-            <div className='scoreDiv'>Score: {currentScore} </div>
-            <div className='bestScoreDiv'>Best Score: {bestScore} </div>
+            <div className='scoreDivContainer'>
+                <div className='scoreDiv'>Score: {currentScore} </div>
+            </div>
+            <div className='bestScoreDivContainer'>
+                <div className='bestScoreDiv'>Best Score: {bestScore} </div>
+            </div>
         </div>
     )
 }

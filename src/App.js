@@ -21,7 +21,7 @@ function App() {
   const fetchPokemons = async () => {
     const pokemons = []
     const num = Math.round(Math.random() * 100);
-    for (let i = num; i <= num+15; i++) {
+    for (let i = num; i <= num+14; i++) {
       const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${i}`
       const response = await fetch(pokemonUrl)
       const pokemon = await response.json()
