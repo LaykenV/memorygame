@@ -139,11 +139,18 @@
     .cardsContainer {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 1rem;
+        gap: 3rem;
+        width: 80%;
     }
 
     .cardContainer {
-        width: 60%;
-        height: 90%;
+        width: 100%;
+        height: 200px;
+    }
+
+    .bodyDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
